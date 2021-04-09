@@ -20,10 +20,8 @@ done
 
 shopt -u globstar dotglob
 
-# Prevent manual updates potentially breaking instances
 sed -i 's/enable_auto_updates_check: true/enable_auto_updates_check: false/' /config/www/user/plugins/admin/admin.yaml
 
-# permissions
 chown -R abc:abc \
 	/app \
 	/config

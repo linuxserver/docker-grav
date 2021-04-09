@@ -15,11 +15,6 @@ available_architectures:
   - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
   - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
 
-# development version
-development_versions: true
-development_versions_items:
-  - { tag: "latest", desc: "Stable releases from GitHub" }
-
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
@@ -35,10 +30,6 @@ param_ports:
 param_usage_include_vols: true
 param_volumes:
   - { vol_path: "/config", vol_host_path: "/path/to/appdata/config", desc: "Contains all relevant configuration files." }
-
-# optional parameters
-opt_param_usage_include_env: false
-opt_param_usage_include_vols: false
 
 # application setup block
 app_setup_block_enabled: true
