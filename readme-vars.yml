@@ -43,7 +43,7 @@ opt_param_usage_include_vols: false
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
-  For more information check out the [Grav documentation](https://learn.getgrav.org/).
+  For more information check out the [Grav documentation](https://learn.getgrav.org/). Our image includes the [grav-admin](https://github.com/getgrav/grav-plugin-admin) plugin.
 
 # changelog
 changelogs:
