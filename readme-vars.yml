@@ -36,6 +36,8 @@ app_setup_block_enabled: true
 app_setup_block: |
   For more information check out the [Grav documentation](https://learn.getgrav.org/). Our image includes the [grav-admin](https://github.com/getgrav/grav-plugin-admin) plugin.
 
+  There is a known issue where the admin plugin scheduler reports `Cron Not Available for user: abc` however this is purely cosmetic and the scheduler will function normally.
+
 # changelog
 changelogs:
   - { date: "09.04.21:", desc: "Initial Release." }

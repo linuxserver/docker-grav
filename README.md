@@ -147,6 +147,8 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
 
 For more information check out the [Grav documentation](https://learn.getgrav.org/). Our image includes the [grav-admin](https://github.com/getgrav/grav-plugin-admin) plugin.
 
+There is a known issue where the admin plugin scheduler reports `Cron Not Available for user: abc` however this is purely cosmetic and the scheduler will function normally.
+
 
 ## Docker Mods
 [![Docker Mods](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=grav&query=%24.mods%5B%27grav%27%5D.mod_count&url=https%3A%2F%2Fraw.githubusercontent.com%2Flinuxserver%2Fdocker-mods%2Fmaster%2Fmod-list.yml)](https://mods.linuxserver.io/?mod=grav "view available mods for this container.") [![Docker Universal Mods](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=universal&query=%24.mods%5B%27universal%27%5D.mod_count&url=https%3A%2F%2Fraw.githubusercontent.com%2Flinuxserver%2Fdocker-mods%2Fmaster%2Fmod-list.yml)](https://mods.linuxserver.io/?mod=universal "view available universal mods.")
