@@ -1,0 +1,27 @@
+#!/usr/bin/with-contenv bash
+
+if ! grep -q 'config-v1' /config/nginx/site-confs/default; then
+    cp /defaults/default /config/nginx/site-confs
+fi
+
+symlinks=( \
+/app/grav-admin/backup \
+/app/grav-admin/logs \
+/app/grav-admin/user \
+)
+
+shopt -s globstar dotglob
+
+for i in "${symlinks[@]}"; do
+[[ -d /config/www/"$(basename "$i")" && ! -L "$i"  ]] && rm -rf "$i"
+[[ ! -d /config/www/"$(basename "$i")" && ! -L "$i"  ]] && mv "$i" /config/www/
+[[ -d /config/www/"$(basename "$i")" && ! -L "$i"  ]] && ln -s /config/www/"$(basename "$i")" "$i"
+done
+
+shopt -u globstar dotglob
+
+sed -i 's/enable_auto_updates_check: true/enable_auto_updates_check: false/' /config/www/user/plugins/admin/admin.yaml
+
+chown -R abc:abc \
+    /app \
+    /config
