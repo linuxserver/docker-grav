@@ -152,7 +152,7 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
 &nbsp;
 ## Application Setup
 
-For more information check out the [Grav documentation](https://learn.getgrav.org/).
+For more information check out the [Grav documentation](https://learn.getgrav.org/). Our image includes the [grav-admin](https://github.com/getgrav/grav-plugin-admin) plugin.
 
 
 ## Docker Mods
