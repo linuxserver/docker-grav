@@ -10,7 +10,7 @@ brotli-libs-1.0.9-r3
 busybox-1.32.1-r6
 ca-certificates-20191127-r5
 ca-certificates-bundle-20191127-r5
-composer-2.0.11-r0
+composer-2.0.13-r0
 coreutils-8.32-r2
 curl-7.76.1-r0
 expat-2.2.10-r1
