@@ -17,6 +17,7 @@ RUN \
     php7-pecl-apcu \
     php7-pecl-yaml \
     php7-intl \
+    busybox-suid \
     unzip && \
   { \
     echo 'opcache.memory_consumption=128'; \
