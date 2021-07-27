@@ -13,7 +13,7 @@ ca-certificates-20191127-r5
 ca-certificates-bundle-20191127-r5
 composer-2.1.3-r0
 coreutils-8.32-r2
-curl-7.77.0-r1
+curl-7.78.0-r0
 expat-2.4.1-r0
 freetype-2.10.4-r1
 git-2.32.0-r0
