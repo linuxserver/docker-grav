@@ -17,6 +17,7 @@ RUN \
     php7-pecl-apcu \
     php7-pecl-yaml \
     php7-intl \
+    php7-redis \
     busybox-suid \
     unzip && \
   { \
