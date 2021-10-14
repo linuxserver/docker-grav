@@ -1,21 +1,27 @@
 #!/usr/bin/with-contenv bash
 
-if ! grep -q 'config-v1' /config/nginx/site-confs/default; then
-    cp /defaults/default /config/nginx/site-confs
+if ! grep -q 'Version 2022/08/20' /config/nginx/site-confs/default.conf; then
+    cp /defaults/nginx/site-confs/default.conf.sample /config/nginx/site-confs/default.conf
 fi
 
 symlinks=( \
-/app/grav-admin/backup \
-/app/grav-admin/logs \
-/app/grav-admin/user \
+/app/www/public/backup \
+/app/www/public/logs \
+/app/www/public/user \
 )
 
 shopt -s globstar dotglob
 
 for i in "${symlinks[@]}"; do
-[[ -d /config/www/"$(basename "$i")" && ! -L "$i"  ]] && rm -rf "$i"
-[[ ! -d /config/www/"$(basename "$i")" && ! -L "$i"  ]] && mv "$i" /config/www/
-[[ -d /config/www/"$(basename "$i")" && ! -L "$i"  ]] && ln -s /config/www/"$(basename "$i")" "$i"
+if [[ -d /config/www/"$(basename "$i")" && ! -L "$i"  ]]; then
+    rm -rf "$i"
+fi
+if [[ ! -d /config/www/"$(basename "$i")" && ! -L "$i"  ]]; then
+    mv "$i" /config/www/
+fi
+if [[ -d /config/www/"$(basename "$i")" && ! -L "$i"  ]]; then
+    ln -s /config/www/"$(basename "$i")" "$i"
+fi
 done
 
 shopt -u globstar dotglob
