@@ -62,6 +62,8 @@ The architectures supported by this image are:
 
 For more information check out the [Grav documentation](https://learn.getgrav.org/). Our image includes the [grav-admin](https://github.com/getgrav/grav-plugin-admin) plugin.
 
+To use the CLI tools you need to pass the working directory as part of your exec command (or use an interactive shell), e.g. `docker exec -it -w /app/grav-admin grav bin/gpm`
+
 ## Usage
 
 Here are some example snippets to help you get started creating a container.
