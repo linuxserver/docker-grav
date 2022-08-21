@@ -58,7 +58,9 @@ RUN \
     /root/.cache \
     /tmp/*
 
+# copy local files
 COPY root/ /
 
+# ports and volumes
 EXPOSE 80 443
 VOLUME /config
