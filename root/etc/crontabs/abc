@@ -1,2 +1,2 @@
 # min   hour    day     month   weekday command
-*       *       *       *       *       cd /app/grav-admin;/usr/bin/php bin/grav scheduler 1>> /dev/null 2>&1
+*       *       *       *       *       cd /app/www/public;/usr/bin/php bin/grav scheduler 1>> /dev/null 2>&1
