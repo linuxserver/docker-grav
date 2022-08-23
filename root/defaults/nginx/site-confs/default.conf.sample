@@ -17,10 +17,11 @@ server {
         #auth_basic "Restricted";
         #auth_basic_user_file /config/nginx/.htpasswd;
 
-        try_files $uri $uri/ /index.php?$query_string;
+        try_files $uri $uri/ /index.php$is_args$args;
     }
 
     ## https://github.com/getgrav/grav/blob/develop/webserver-configs/nginx.conf
+
     ## Begin - Security
     # deny all direct access for these folders
     location ~* /(\.git|cache|bin|logs|backup|tests)/.*$ { return 403; }
