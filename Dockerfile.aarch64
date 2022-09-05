@@ -31,6 +31,10 @@ RUN \
     php8-xml \
     php8-zip \
     unzip && \
+  echo "**** configure php-fpm to pass env vars ****" && \
+  sed -E -i 's/^;?clear_env ?=.*$/clear_env = no/g' /etc/php8/php-fpm.d/www.conf && \
+  grep -qxF 'clear_env = no' /etc/php8/php-fpm.d/www.conf || echo 'clear_env = no' >> /etc/php8/php-fpm.d/www.conf && \
+  echo "env[PATH] = /usr/local/bin:/usr/bin:/bin" >> /etc/php8/php-fpm.conf && \
   echo "**** setup php opcache ****" && \
   { \
     echo 'opcache.memory_consumption=128'; \
