@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine-nginx:3.15
+FROM ghcr.io/linuxserver/baseimage-alpine-nginx:3.17
 
 ARG BUILD_DATE
 ARG VERSION
@@ -11,30 +11,29 @@ RUN \
   apk add --no-cache \
     busybox-suid \
     composer \
-    curl \
-    php8-ctype \
-    php8-curl \
-    php8-dom \
-    php8-gd \
-    php8-intl \
-    php8-json \
-    php8-mbstring \
-    php8-opcache \
-    php8-openssl \
-    php8-pecl-apcu \
-    php8-pecl-yaml \
-    php8-phar \
-    php8-redis \
-    php8-session \
-    php8-simplexml \
-    php8-tokenizer \
-    php8-xml \
-    php8-zip \
+    php81-ctype \
+    php81-curl \
+    php81-dom \
+    php81-gd \
+    php81-intl \
+    php81-json \
+    php81-mbstring \
+    php81-opcache \
+    php81-openssl \
+    php81-pecl-apcu \
+    php81-pecl-yaml \
+    php81-phar \
+    php81-redis \
+    php81-session \
+    php81-simplexml \
+    php81-tokenizer \
+    php81-xml \
+    php81-zip \
     unzip && \
   echo "**** configure php-fpm to pass env vars ****" && \
-  sed -E -i 's/^;?clear_env ?=.*$/clear_env = no/g' /etc/php8/php-fpm.d/www.conf && \
-  grep -qxF 'clear_env = no' /etc/php8/php-fpm.d/www.conf || echo 'clear_env = no' >> /etc/php8/php-fpm.d/www.conf && \
-  echo "env[PATH] = /usr/local/bin:/usr/bin:/bin" >> /etc/php8/php-fpm.conf && \
+  sed -E -i 's/^;?clear_env ?=.*$/clear_env = no/g' /etc/php81/php-fpm.d/www.conf && \
+  grep -qxF 'clear_env = no' /etc/php81/php-fpm.d/www.conf || echo 'clear_env = no' >> /etc/php81/php-fpm.d/www.conf && \
+  echo "env[PATH] = /usr/local/bin:/usr/bin:/bin" >> /etc/php81/php-fpm.conf && \
   echo "**** setup php opcache ****" && \
   { \
     echo 'opcache.memory_consumption=128'; \
@@ -42,7 +41,7 @@ RUN \
     echo 'opcache.max_accelerated_files=4000'; \
     echo 'opcache.revalidate_freq=2'; \
     echo 'opcache.enable_cli=1'; \
-  } > /etc/php8/conf.d/php-opcache.ini && \
+  } > /etc/php81/conf.d/php-opcache.ini && \
   if [ -z ${GRAV_RELEASE+x} ]; then \
     GRAV_RELEASE=$(curl -sX GET "https://api.github.com/repos/getgrav/grav/releases/latest" \
     | awk '/tag_name/{print $4;exit}' FS='[""]'); \
@@ -67,4 +66,5 @@ COPY root/ /
 
 # ports and volumes
 EXPOSE 80 443
+
 VOLUME /config

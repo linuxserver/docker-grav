@@ -24,6 +24,6 @@ shopt -u globstar dotglob
 
 sed -i 's/enable_auto_updates_check: true/enable_auto_updates_check: false/' /config/www/user/plugins/admin/admin.yaml
 
-chown -R abc:abc \
+lsiown -R abc:abc \
     /app \
-    /config
+    /config/www
