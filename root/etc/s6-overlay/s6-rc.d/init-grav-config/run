@@ -1,23 +1,24 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 
-symlinks=( \
-/app/www/public/backup \
-/app/www/public/logs \
-/app/www/public/user \
+symlinks=(
+    /app/www/public/backup
+    /app/www/public/logs
+    /app/www/public/user
 )
 
 shopt -s globstar dotglob
 
 for i in "${symlinks[@]}"; do
-if [[ -d /config/www/"$(basename "$i")" && ! -L "$i"  ]]; then
-    rm -rf "$i"
-fi
-if [[ ! -d /config/www/"$(basename "$i")" && ! -L "$i"  ]]; then
-    mv "$i" /config/www/
-fi
-if [[ -d /config/www/"$(basename "$i")" && ! -L "$i"  ]]; then
-    ln -s /config/www/"$(basename "$i")" "$i"
-fi
+    if [[ -d /config/www/"$(basename "$i")" && ! -L "$i" ]]; then
+        rm -rf "$i"
+    fi
+    if [[ ! -d /config/www/"$(basename "$i")" && ! -L "$i" ]]; then
+        mv "$i" /config/www/
+    fi
+    if [[ -d /config/www/"$(basename "$i")" && ! -L "$i" ]]; then
+        ln -s /config/www/"$(basename "$i")" "$i"
+    fi
 done
 
 shopt -u globstar dotglob
