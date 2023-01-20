@@ -30,8 +30,7 @@ RUN \
     php81-simplexml \
     php81-tokenizer \
     php81-xml \
-    php81-zip \
-    unzip && \
+    php81-zip && \
   echo "**** configure php-fpm to pass env vars ****" && \
   sed -E -i 's/^;?clear_env ?=.*$/clear_env = no/g' /etc/php81/php-fpm.d/www.conf && \
   grep -qxF 'clear_env = no' /etc/php81/php-fpm.d/www.conf || echo 'clear_env = no' >> /etc/php81/php-fpm.d/www.conf && \
