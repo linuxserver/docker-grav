@@ -18,18 +18,12 @@ RUN \
     php81-dom \
     php81-gd \
     php81-intl \
-    php81-json \
-    php81-mbstring \
     php81-opcache \
-    php81-openssl \
     php81-pecl-apcu \
     php81-pecl-yaml \
     php81-phar \
     php81-redis \
-    php81-session \
-    php81-simplexml \
     php81-tokenizer \
-    php81-xml \
     php81-zip && \
   echo "**** configure php-fpm to pass env vars ****" && \
   sed -E -i 's/^;?clear_env ?=.*$/clear_env = no/g' /etc/php81/php-fpm.d/www.conf && \
