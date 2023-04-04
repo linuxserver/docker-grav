@@ -55,7 +55,7 @@ libavif                               0.11.1-r0              apk
 libbsd                                0.11.7-r0              apk           
 libbz2                                1.0.8-r4               apk           
 libc-utils                            0.7.2-r3               apk           
-libcrypto3                            3.0.8-r0               apk           
+libcrypto3                            3.0.8-r1               apk           
 libcurl                               7.88.1-r1              apk           
 libdav1d                              1.0.0-r2               apk           
 libedit                               20221030.3.1-r0        apk           
@@ -68,7 +68,7 @@ libmd                                 1.0.4-r0               apk
 libpng                                1.6.38-r0              apk           
 libproc                               3.3.17-r2              apk           
 libsm                                 1.2.3-r1               apk           
-libssl3                               3.0.8-r0               apk           
+libssl3                               3.0.8-r1               apk           
 libstdc++                             12.2.1_git20220924-r4  apk           
 libuuid                               2.38.1-r1              apk           
 libwebp                               1.2.4-r1               apk           
@@ -101,7 +101,7 @@ nginx                                 1.22.1-r0              apk
 nyholm/psr7                           1.5.1                  php-composer  
 nyholm/psr7-server                    1.0.2                  php-composer  
 oniguruma                             6.9.8-r0               apk           
-openssl                               3.0.8-r1               apk           
+openssl                               3.0.8-r3               apk           
 p3k/picofeed                          1.0.0                  php-composer  
 paragonie/random_compat               v1.4.3                 php-composer  
 pcre                                  8.45-r2                apk           
@@ -173,7 +173,7 @@ symfony/process                       v4.4.44                php-composer
 symfony/var-dumper                    v4.4.47                php-composer  
 symfony/yaml                          v4.4.45                php-composer  
 twig/twig                             v1.44.7                php-composer  
-tzdata                                2022f-r1               apk           
+tzdata                                2023b-r1               apk           
 utmps-libs                            0.1.2.0-r1             apk           
 willdurand/negotiation                3.1.0                  php-composer  
 xz                                    5.2.9-r0               apk           
