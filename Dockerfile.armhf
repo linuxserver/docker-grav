@@ -18,6 +18,7 @@ RUN \
     php81-dom \
     php81-gd \
     php81-intl \
+    php81-ldap \
     php81-opcache \
     php81-pecl-apcu \
     php81-pecl-yaml \

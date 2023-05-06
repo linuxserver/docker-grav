@@ -40,6 +40,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "06.05.23:", desc: "Add php-ldap for LDAP support." }
   - { date: "13.04.23:", desc: "Move ssl.conf include to default.conf." }
   - { date: "11.12.22:", desc: "Rebase to Alpine 3.17, PHP 8.1."}
   - { date: "05.09.22:", desc: "All php to read envs passed to container."}
