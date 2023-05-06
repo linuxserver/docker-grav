@@ -35,6 +35,7 @@ erusev/parsedown                      1.7.4                  php-composer
 erusev/parsedown-extra                0.8.1                  php-composer  
 filp/whoops                           2.14.6                 php-composer  
 freetype                              2.12.1-r0              apk           
+gdbm                                  1.23-r0                apk           
 getgrav/cache                         v2.0.0                 php-composer  
 getgrav/image                         v3.0.0                 php-composer  
 git                                   2.38.5-r0              apk           
@@ -64,9 +65,11 @@ libgcc                                12.2.1_git20220924-r4  apk
 libice                                1.0.10-r1              apk           
 libintl                               0.21.1-r1              apk           
 libjpeg-turbo                         2.1.4-r0               apk           
+libldap                               2.6.3-r6               apk           
 libmd                                 1.0.4-r0               apk           
 libpng                                1.6.38-r0              apk           
 libproc                               3.3.17-r2              apk           
+libsasl                               2.1.28-r3              apk           
 libsm                                 1.2.3-r1               apk           
 libssl3                               3.0.8-r4               apk           
 libstdc++                             12.2.1_git20220924-r4  apk           
@@ -119,6 +122,7 @@ php81-fpm                             8.1.18-r0              apk
 php81-gd                              8.1.18-r0              apk           
 php81-iconv                           8.1.18-r0              apk           
 php81-intl                            8.1.18-r0              apk           
+php81-ldap                            8.1.18-r0              apk           
 php81-mbstring                        8.1.18-r0              apk           
 php81-opcache                         8.1.18-r0              apk           
 php81-openssl                         8.1.18-r0              apk           
