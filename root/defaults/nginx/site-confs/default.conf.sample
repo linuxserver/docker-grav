@@ -1,4 +1,4 @@
-## Version 2023/04/13 - Changelog: https://github.com/linuxserver/docker-grav/commits/main/root/defaults/nginx/site-confs/default.conf.sample
+## Version 2023/05/16 - Changelog: https://github.com/linuxserver/docker-grav/commits/main/root/defaults/nginx/site-confs/default.conf.sample
 
 server {
     listen 80 default_server;
@@ -35,8 +35,12 @@ server {
     location ~ /(LICENSE\.txt|composer\.lock|composer\.json|nginx\.conf|web\.config|htaccess\.txt|\.htaccess) { return 403; }
     ## End - Security
 
-    ## https://learn.getgrav.org/17/webservers-hosting/servers/nginx#nginx-cache-headers-for-a
+    ## https://learn.getgrav.org/17/webservers-hosting/servers/nginx#nginx-cache-headers-for-assets
     ## Begin - Caching
+    location ~* ^/forms-basic-captcha-image.jpg$ {
+        try_files $uri $uri/ /index.php$is_args$args;
+    }
+
     location ~* \.(?:ico|css|js|gif|jpe?g|png)$ {
             expires 30d;
             add_header Vary Accept-Encoding;
