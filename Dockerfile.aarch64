@@ -12,6 +12,7 @@ RUN \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
     busybox-suid \
+    nginx-mod-http-brotli \
     php83-dom \
     php83-gd \
     php83-intl \
