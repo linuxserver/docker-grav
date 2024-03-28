@@ -110,6 +110,7 @@ ncurses-terminfo-base                 6.4_p20231125-r0       apk
 netcat-openbsd                        1.226-r0               apk                           
 nghttp2-libs                          1.58.0-r0              apk                           
 nginx                                 1.24.0-r15             apk                           
+nginx-mod-http-brotli                 1.24.0-r15             apk                           
 nyholm/psr7                           1.8.1                  php-composer                  
 nyholm/psr7-server                    1.1.0                  php-composer                  
 oniguruma                             6.9.9-r0               apk                           
