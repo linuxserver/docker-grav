@@ -21,6 +21,7 @@ c-ares                                1.27.0-r0              apk
 ca-certificates                       20240226-r0            apk                           
 ca-certificates-bundle                20240226-r0            apk                           
 composer                              2.7.2                  binary                        
+composer                              2.7.4                  binary                        
 composer/ca-bundle                    1.5.0                  php-composer                  
 composer/semver                       1.7.2                  php-composer                  
 coreutils                             9.4-r2                 apk                           
@@ -49,7 +50,6 @@ google/recaptcha                      1.2.4                  php-composer
 grav-admin                            1.0.0                  npm                           
 grav-plugin-form                      1.0.0                  npm                           
 guzzlehttp/psr7                       1.9.1                  php-composer                  
-hiredis                               1.2.0-r0               apk                           
 icu-data-en                           74.1-r0                apk                           
 icu-libs                              74.1-r0                apk                           
 itsgoingd/clockwork                   v5.2.0                 php-composer                  
@@ -110,8 +110,8 @@ nano                                  7.2-r1                 apk
 ncurses-terminfo-base                 6.4_p20231125-r0       apk                           
 netcat-openbsd                        1.226-r0               apk                           
 nghttp2-libs                          1.58.0-r0              apk                           
-nginx                                 1.24.0-r15             apk                           
-nginx-mod-http-brotli                 1.24.0-r15             apk                           
+nginx                                 1.24.0-r16             apk                           
+nginx-mod-http-brotli                 1.24.0-r16             apk                           
 nyholm/psr7                           1.8.1                  php-composer                  
 nyholm/psr7-server                    1.1.0                  php-composer                  
 oniguruma                             6.9.9-r0               apk                           
