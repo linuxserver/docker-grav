@@ -46,7 +46,7 @@ freetype                              2.13.2-r0              apk
 gdbm                                  1.23-r1                apk                           
 getgrav/cache                         v2.0.0                 php-composer                  
 getgrav/image                         v3.0.1                 php-composer                  
-git                                   2.43.0-r0              apk                           
+git                                   2.43.4-r0              apk                           
 google/recaptcha                      1.2.4                  php-composer                  
 grav-admin                            1.0.0                  npm                           
 grav-plugin-form                      1.0.0                  npm                           
