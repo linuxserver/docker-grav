@@ -29,7 +29,7 @@ coreutils                             9.5-r1                 apk
 coreutils-env                         9.5-r1                 apk                           
 coreutils-fmt                         9.5-r1                 apk                           
 coreutils-sha512sum                   9.5-r1                 apk                           
-curl                                  8.9.1-r1               apk                           
+curl                                  8.10.0-r0              apk                           
 dasprid/enum                          1.0.4                  php-composer                  
 doctrine/cache                        1.13.0                 php-composer                  
 doctrine/collections                  1.8.0                  php-composer                  
@@ -65,7 +65,7 @@ libavif                               1.0.4-r0               apk
 libbsd                                0.12.2-r0              apk                           
 libbz2                                1.0.8-r6               apk                           
 libcrypto3                            3.3.2-r0               apk                           
-libcurl                               8.9.1-r1               apk                           
+libcurl                               8.10.0-r0              apk                           
 libdav1d                              1.4.2-r0               apk                           
 libedit                               20240517.3.1-r0        apk                           
 libexpat                              2.6.3-r0               apk                           
@@ -76,7 +76,7 @@ libintl                               0.22.5-r0              apk
 libjpeg-turbo                         3.0.3-r0               apk                           
 libldap                               2.6.7-r0               apk                           
 libmd                                 1.1.0-r0               apk                           
-libncursesw                           6.4_p20240420-r0       apk                           
+libncursesw                           6.4_p20240420-r1       apk                           
 libpng                                1.6.43-r0              apk                           
 libproc2                              4.0.4-r0               apk                           
 libpsl                                0.21.5-r1              apk                           
@@ -109,7 +109,7 @@ multiavatar/multiavatar-php           v1.0.5                 php-composer
 musl                                  1.2.5-r0               apk                           
 musl-utils                            1.2.5-r0               apk                           
 nano                                  8.0-r0                 apk                           
-ncurses-terminfo-base                 6.4_p20240420-r0       apk                           
+ncurses-terminfo-base                 6.4_p20240420-r1       apk                           
 netcat-openbsd                        1.226-r0               apk                           
 nghttp2-libs                          1.62.1-r0              apk                           
 nginx                                 1.26.2-r0              apk                           
