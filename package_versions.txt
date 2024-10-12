@@ -42,6 +42,7 @@ erusev/parsedown                      1.7.4                  php-composer
 erusev/parsedown-extra                0.8.1                  php-composer                  
 filp/whoops                           2.15.4                 php-composer                  
 findutils                             4.9.0-r5               apk                           
+flex-objects                          UNKNOWN                npm                           
 freetype                              2.13.2-r0              apk                           
 gdbm                                  1.23-r1                apk                           
 getgrav/cache                         v2.0.0                 php-composer                  
@@ -140,7 +141,7 @@ php83-pecl-apcu                       5.1.23-r0              apk
 php83-pecl-igbinary                   3.2.15-r0              apk                           
 php83-pecl-msgpack                    2.2.0-r2               apk                           
 php83-pecl-redis                      6.1.0-r0               apk                           
-php83-pecl-yaml                       2.2.3-r0               apk                           
+php83-pecl-yaml                       2.2.4-r0               apk                           
 php83-phar                            8.3.12-r0              apk                           
 php83-session                         8.3.12-r0              apk                           
 php83-simplexml                       8.3.12-r0              apk                           
