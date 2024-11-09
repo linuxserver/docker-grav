@@ -21,7 +21,9 @@ RUN \
     php83-pecl-apcu \
     php83-pecl-yaml \
     php83-redis \
-    php83-tokenizer && \
+    php83-tokenizer  \
+    php83-pdo \
+    php83-pdo_sqlite && \
   echo "**** configure php-fpm to pass env vars ****" && \
   sed -E -i 's/^;?clear_env ?=.*$/clear_env = no/g' /etc/php83/php-fpm.d/www.conf && \
   grep -qxF 'clear_env = no' /etc/php83/php-fpm.d/www.conf || echo 'clear_env = no' >> /etc/php83/php-fpm.d/www.conf && \
