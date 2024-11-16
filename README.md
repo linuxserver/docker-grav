@@ -63,6 +63,7 @@ For more information check out the [Grav documentation](https://learn.getgrav.or
 
 To use the CLI tools you need to pass the working directory as part of your exec command (or use an interactive shell), e.g. `docker exec -it -w /app/www/public grav bin/gpm`
 
+ 
 ## Usage
 
 To help you get started creating a container from this image you can either use docker-compose or the docker cli.
@@ -264,10 +265,10 @@ docker build \
   -t lscr.io/linuxserver/grav:latest .
 ```
 
-The ARM variants can be built on x86_64 hardware using `multiarch/qemu-user-static`
+The ARM variants can be built on x86_64 hardware and vice versa using `lscr.io/linuxserver/qemu-static`
 
 ```bash
-docker run --rm --privileged multiarch/qemu-user-static:register --reset
+docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 ```
 
 Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64`.
