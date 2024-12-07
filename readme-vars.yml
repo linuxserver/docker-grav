@@ -6,45 +6,93 @@ project_url: "https://github.com/getgrav/grav/"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/grav-logo.png"
 project_blurb: |
   [{{ project_name|capitalize }}]({{ project_url }}) is a Fast, Simple, and Flexible, file-based Web-platform.
-
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-
 # supported architectures
 available_architectures:
-  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
-  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
-
+  - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - {arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
-
 param_usage_include_ports: true
 param_ports:
-  - { external_port: "80", internal_port: "80", port_desc: "Port for web frontend" }
-
+  - {external_port: "80", internal_port: "80", port_desc: "Port for web frontend"}
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files" }
-
+  - {vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files"}
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
   For more information check out the [Grav documentation](https://learn.getgrav.org/). Our image includes the [grav-admin](https://github.com/getgrav/grav-plugin-admin) plugin.
 
   To use the CLI tools you need to pass the working directory as part of your exec command (or use an interactive shell), e.g. `docker exec -it -w /app/www/public grav bin/gpm`
-
+# init diagram
+init_diagram: |
+  "grav:latest": {
+    docker-mods
+    base {
+      fix-attr +\nlegacy cont-init
+    }
+    docker-mods -> base
+    legacy-services
+    custom services
+    init-services -> legacy-services
+    init-services -> custom services
+    custom services -> legacy-services
+    legacy-services -> ci-service-check
+    init-migrations -> init-adduser
+    init-nginx-end -> init-config
+    init-os-end -> init-config
+    init-config -> init-config-end
+    init-grav-config -> init-config-end
+    init-os-end -> init-crontab-config
+    init-mods-end -> init-custom-files
+    base -> init-envfile
+    init-os-end -> init-folders
+    init-nginx-end -> init-grav-config
+    init-php -> init-keygen
+    base -> init-migrations
+    base -> init-mods
+    init-config-end -> init-mods
+    init-version-checks -> init-mods
+    init-mods -> init-mods-end
+    init-mods-package-install -> init-mods-end
+    init-mods -> init-mods-package-install
+    init-samples -> init-nginx
+    init-permissions -> init-nginx-end
+    base -> init-os-end
+    init-adduser -> init-os-end
+    init-envfile -> init-os-end
+    init-migrations -> init-os-end
+    init-keygen -> init-permissions
+    init-nginx -> init-php
+    init-folders -> init-samples
+    init-custom-files -> init-services
+    init-mods-end -> init-services
+    init-config-end -> init-version-checks
+    init-services -> svc-cron
+    svc-cron -> legacy-services
+    init-services -> svc-nginx
+    svc-nginx -> legacy-services
+    init-services -> svc-php-fpm
+    svc-php-fpm -> legacy-services
+  }
+  Base Images: {
+    "baseimage-alpine-nginx:3.20" <- "baseimage-alpine:3.20"
+  }
+  "grav:latest" <- Base Images
 # changelog
 changelogs:
-  - { date: "19.06.24:", desc: "Rebase to Alpine 3.20. Symlink robots.txt to /config. Existing users should update their nginx confs to avoid http2 deprecation warnings." }
-  - { date: "06.03.24:", desc: "Add brotli to nginx." }
-  - { date: "06.03.24:", desc: "Existing users should update: site-confs/default.conf - Cleanup default site conf." }
-  - { date: "23.12.23:", desc: "Rebase to Alpine 3.19 with php 8.3."}
-  - { date: "25.05.23:", desc: "Rebase to Alpine 3.18, deprecate armhf." }
-  - { date: "06.05.23:", desc: "Add php-ldap for LDAP support." }
-  - { date: "13.04.23:", desc: "Move ssl.conf include to default.conf." }
-  - { date: "11.12.22:", desc: "Rebase to Alpine 3.17, PHP 8.1."}
-  - { date: "05.09.22:", desc: "All php to read envs passed to container."}
-  - { date: "20.08.22:", desc: "Rebasing to alpine 3.15 with php8. Restructure nginx configs ([see changes announcement](https://info.linuxserver.io/issues/2022-08-20-nginx-base))." }
-  - { date: "03.09.21:", desc: "Added support for Redis caching."}
-  - { date: "01.07.21:", desc: "Rebase to Alpine 3.14." }
-  - { date: "09.04.21:", desc: "Initial Release." }
+  - {date: "19.06.24:", desc: "Rebase to Alpine 3.20. Symlink robots.txt to /config. Existing users should update their nginx confs to avoid http2 deprecation warnings."}
+  - {date: "06.03.24:", desc: "Add brotli to nginx."}
+  - {date: "06.03.24:", desc: "Existing users should update: site-confs/default.conf - Cleanup default site conf."}
+  - {date: "23.12.23:", desc: "Rebase to Alpine 3.19 with php 8.3."}
+  - {date: "25.05.23:", desc: "Rebase to Alpine 3.18, deprecate armhf."}
+  - {date: "06.05.23:", desc: "Add php-ldap for LDAP support."}
+  - {date: "13.04.23:", desc: "Move ssl.conf include to default.conf."}
+  - {date: "11.12.22:", desc: "Rebase to Alpine 3.17, PHP 8.1."}
+  - {date: "05.09.22:", desc: "All php to read envs passed to container."}
+  - {date: "20.08.22:", desc: "Rebasing to alpine 3.15 with php8. Restructure nginx configs ([see changes announcement](https://info.linuxserver.io/issues/2022-08-20-nginx-base))."}
+  - {date: "03.09.21:", desc: "Added support for Redis caching."}
+  - {date: "01.07.21:", desc: "Rebase to Alpine 3.14."}
+  - {date: "09.04.21:", desc: "Initial Release."}
