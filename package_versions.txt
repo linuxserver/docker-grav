@@ -29,7 +29,7 @@ coreutils                             9.5-r2                 apk
 coreutils-env                         9.5-r2                 apk                           
 coreutils-fmt                         9.5-r2                 apk                           
 coreutils-sha512sum                   9.5-r2                 apk                           
-curl                                  8.11.1-r0              apk                           
+curl                                  8.12.0-r0              apk                           
 dasprid/enum                          1.0.4                  php-composer                  
 doctrine/cache                        1.13.0                 php-composer                  
 doctrine/collections                  1.8.0                  php-composer                  
@@ -66,8 +66,8 @@ libattr                               2.5.2-r0               apk
 libavif                               1.0.4-r0               apk                           
 libbsd                                0.12.2-r0              apk                           
 libbz2                                1.0.8-r6               apk                           
-libcrypto3                            3.3.2-r1               apk                           
-libcurl                               8.11.1-r0              apk                           
+libcrypto3                            3.3.3-r0               apk                           
+libcurl                               8.12.0-r0              apk                           
 libdav1d                              1.4.2-r0               apk                           
 libedit                               20240517.3.1-r0        apk                           
 libexpat                              2.6.4-r0               apk                           
@@ -85,7 +85,7 @@ libpsl                                0.21.5-r1              apk
 libsasl                               2.1.28-r6              apk                           
 libsharpyuv                           1.3.2-r0               apk                           
 libsm                                 1.2.4-r4               apk                           
-libssl3                               3.3.2-r1               apk                           
+libssl3                               3.3.3-r0               apk                           
 libstdc++                             13.2.1_git20240309-r0  apk                           
 libunistring                          1.2-r0                 apk                           
 libuuid                               2.40.1-r1              apk                           
@@ -119,7 +119,7 @@ nginx-mod-http-brotli                 1.26.2-r0              apk
 nyholm/psr7                           1.8.2                  php-composer                  
 nyholm/psr7-server                    1.1.0                  php-composer                  
 oniguruma                             6.9.9-r0               apk                           
-openssl                               3.3.2-r1               apk                           
+openssl                               3.3.3-r0               apk                           
 p3k/picofeed                          1.0.0                  php-composer                  
 paragonie/random_compat               v1.4.3                 php-composer                  
 pcre                                  8.45-r3                apk                           
