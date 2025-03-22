@@ -70,7 +70,7 @@ libcrypto3                            3.3.3-r0               apk
 libcurl                               8.12.1-r0              apk                           
 libdav1d                              1.4.2-r0               apk                           
 libedit                               20240517.3.1-r0        apk                           
-libexpat                              2.6.4-r0               apk                           
+libexpat                              2.7.0-r0               apk                           
 libgcc                                13.2.1_git20240309-r1  apk                           
 libice                                1.1.1-r6               apk                           
 libidn2                               2.3.7-r0               apk                           
@@ -114,8 +114,8 @@ nano                                  8.0-r0                 apk
 ncurses-terminfo-base                 6.4_p20240420-r2       apk                           
 netcat-openbsd                        1.226-r0               apk                           
 nghttp2-libs                          1.62.1-r0              apk                           
-nginx                                 1.26.2-r0              apk                           
-nginx-mod-http-brotli                 1.26.2-r0              apk                           
+nginx                                 1.26.3-r0              apk                           
+nginx-mod-http-brotli                 1.26.3-r0              apk                           
 nyholm/psr7                           1.8.2                  php-composer                  
 nyholm/psr7-server                    1.1.0                  php-composer                  
 oniguruma                             6.9.9-r0               apk                           
