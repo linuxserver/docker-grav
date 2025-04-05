@@ -1,5 +1,4 @@
 NAME                                  VERSION                TYPE                         
-Hidden Input                          1, 0, 0, 0             dotnet        (+1 duplicate)  
 alpine-baselayout                     3.6.5-r0               apk                           
 alpine-baselayout-data                3.6.5-r0               apk                           
 alpine-keys                           2.4-r1                 apk                           
@@ -22,7 +21,7 @@ ca-certificates                       20241121-r1            apk
 ca-certificates-bundle                20241121-r1            apk                           
 catatonit                             0.2.0-r0               apk                           
 composer                              2.7.2                  binary                        
-composer                              2.8.6                  binary                        
+composer                              2.8.7                  binary                        
 composer/ca-bundle                    1.5.2                  php-composer                  
 composer/semver                       1.7.2                  php-composer                  
 coreutils                             9.5-r2                 apk                           
@@ -202,7 +201,7 @@ symfony/service-contracts             v2.5.3                 php-composer
 symfony/var-dumper                    v4.4.47                php-composer                  
 symfony/yaml                          v4.4.45                php-composer                  
 twig/twig                             v1.44.8                php-composer                  
-tzdata                                2025a-r0               apk                           
+tzdata                                2025b-r0               apk                           
 utmps-libs                            0.1.2.2-r1             apk                           
 willdurand/negotiation                3.1.0                  php-composer                  
 xz-libs                               5.6.2-r0               apk                           
