@@ -14,9 +14,9 @@ bacon/bacon-qr-code                   2.0.8                  php-composer
 bash                                  5.2.26-r0              apk                           
 birke/rememberme                      1.0.5                  php-composer                  
 brotli-libs                           1.1.0-r2               apk                           
-busybox                               1.36.1-r29             apk                           
-busybox-binsh                         1.36.1-r29             apk                           
-busybox-suid                          1.36.1-r29             apk                           
+busybox                               1.36.1-r30             apk                           
+busybox-binsh                         1.36.1-r30             apk                           
+busybox-suid                          1.36.1-r30             apk                           
 c-ares                                1.33.1-r0              apk                           
 ca-certificates                       20250619-r0            apk                           
 ca-certificates-bundle                20250619-r0            apk                           
@@ -174,7 +174,7 @@ seld/cli-prompt                       1.0.4                  php-composer
 shadow                                4.15.1-r0              apk                           
 skalibs                               2.14.1.1-r0            apk                           
 spectre.css                           0.5.1                  npm           (+1 duplicate)  
-ssl_client                            1.36.1-r29             apk                           
+ssl_client                            1.36.1-r30             apk                           
 symfony/amqp-messenger                v5.4.36                php-composer                  
 symfony/console                       v4.4.49                php-composer                  
 symfony/contracts                     v1.10.0                php-composer                  
