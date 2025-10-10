@@ -18,6 +18,8 @@ RUN \
     php83-intl \
     php83-ldap \
     php83-opcache \
+    php83-pdo \
+    php83-pdo_sqlite \
     php83-pecl-apcu \
     php83-pecl-yaml \
     php83-redis \
