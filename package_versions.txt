@@ -17,8 +17,8 @@ busybox                             1.36.1-r30             apk
 busybox-binsh                       1.36.1-r30             apk                           
 busybox-suid                        1.36.1-r30             apk                           
 c-ares                              1.33.1-r0              apk                           
-ca-certificates                     20250619-r0            apk                           
-ca-certificates-bundle              20250619-r0            apk                           
+ca-certificates                     20250911-r0            apk                           
+ca-certificates-bundle              20250911-r0            apk                           
 catatonit                           0.2.0-r0               apk                           
 composer                            2.7.2                  binary                        
 composer                            2.8.12                 binary                        
@@ -28,7 +28,7 @@ coreutils                           9.5-r2                 apk
 coreutils-env                       9.5-r2                 apk                           
 coreutils-fmt                       9.5-r2                 apk                           
 coreutils-sha512sum                 9.5-r2                 apk                           
-curl                                8.12.1-r0              apk                           
+curl                                8.14.1-r2              apk                           
 dasprid/enum                        1.0.6                  php-composer                  
 doctrine/cache                      1.13.0                 php-composer                  
 doctrine/collections                1.8.0                  php-composer                  
@@ -65,7 +65,7 @@ libavif                             1.0.4-r0               apk
 libbsd                              0.12.2-r0              apk                           
 libbz2                              1.0.8-r6               apk                           
 libcrypto3                          3.3.5-r0               apk                           
-libcurl                             8.12.1-r0              apk                           
+libcurl                             8.14.1-r2              apk                           
 libdav1d                            1.4.2-r0               apk                           
 libedit                             20240517.3.1-r0        apk                           
 libexpat                            2.7.3-r0               apk                           
@@ -137,6 +137,8 @@ php83-ldap                          8.3.15-r0              apk
 php83-mbstring                      8.3.15-r0              apk                           
 php83-opcache                       8.3.15-r0              apk                           
 php83-openssl                       8.3.15-r0              apk                           
+php83-pdo                           8.3.15-r0              apk                           
+php83-pdo_sqlite                    8.3.15-r0              apk                           
 php83-pecl-apcu                     5.1.23-r0              apk                           
 php83-pecl-igbinary                 3.2.15-r0              apk                           
 php83-pecl-msgpack                  2.2.0-r2               apk                           
@@ -173,6 +175,7 @@ seld/cli-prompt                     1.0.4                  php-composer
 shadow                              4.15.1-r0              apk                           
 skalibs                             2.14.1.1-r0            apk                           
 spectre.css                         0.5.1                  npm           (+1 duplicate)  
+sqlite-libs                         3.45.3-r2              apk                           
 ssl_client                          1.36.1-r30             apk                           
 symfony/amqp-messenger              v5.4.45                php-composer                  
 symfony/console                     v4.4.49                php-composer                  
