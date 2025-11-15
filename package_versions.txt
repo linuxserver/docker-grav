@@ -21,7 +21,7 @@ ca-certificates                     20250911-r0            apk
 ca-certificates-bundle              20250911-r0            apk                           
 catatonit                           0.2.0-r0               apk                           
 composer                            2.7.2                  binary                        
-composer                            2.8.12                 binary                        
+composer                            2.9.1                  binary                        
 composer/ca-bundle                  1.5.8                  php-composer                  
 composer/semver                     1.7.2                  php-composer                  
 coreutils                           9.5-r2                 apk                           
