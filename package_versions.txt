@@ -203,7 +203,7 @@ symfony/service-contracts           v2.5.4                 php-composer
 symfony/var-dumper                  v4.4.47                php-composer                  
 symfony/yaml                        v4.4.45                php-composer                  
 twig/twig                           v1.44.8                php-composer                  
-tzdata                              2025b-r0               apk                           
+tzdata                              2025c-r0               apk                           
 utmps-libs                          0.1.2.2-r1             apk                           
 webmozart/assert                    1.11.0                 php-composer                  
 willdurand/negotiation              3.1.0                  php-composer                  
