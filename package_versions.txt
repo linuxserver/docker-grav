@@ -3,7 +3,7 @@ Hidden Input                        1, 0, 0, 0             binary        (+1 dup
 alpine-baselayout                   3.6.5-r0               apk                           
 alpine-baselayout-data              3.6.5-r0               apk                           
 alpine-keys                         2.4-r1                 apk                           
-alpine-release                      3.20.8-r0              apk                           
+alpine-release                      3.20.9-r0              apk                           
 aom-libs                            3.9.1-r0               apk                           
 apache2-utils                       2.4.66-r0              apk                           
 apk-tools                           2.14.4-r1              apk                           
@@ -68,7 +68,7 @@ libcrypto3                          3.3.6-r0               apk
 libcurl                             8.14.1-r2              apk                           
 libdav1d                            1.4.2-r0               apk                           
 libedit                             20240517.3.1-r0        apk                           
-libexpat                            2.7.3-r0               apk                           
+libexpat                            2.7.4-r0               apk                           
 libgcc                              13.2.1_git20240309-r1  apk                           
 libice                              1.1.1-r6               apk                           
 libidn2                             2.3.7-r0               apk                           
@@ -175,7 +175,7 @@ seld/cli-prompt                     1.0.4                  php-composer
 shadow                              4.15.1-r0              apk                           
 skalibs                             2.14.1.1-r0            apk                           
 spectre.css                         0.5.1                  npm           (+1 duplicate)  
-sqlite-libs                         3.45.3-r2              apk                           
+sqlite-libs                         3.45.3-r3              apk                           
 ssl_client                          1.36.1-r31             apk                           
 symfony/amqp-messenger              v5.4.45                php-composer                  
 symfony/console                     v4.4.49                php-composer                  
