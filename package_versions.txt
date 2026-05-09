@@ -206,7 +206,7 @@ symfony/var-dumper                  v4.4.47                php-composer
 symfony/yaml                        v4.4.45                php-composer                  
 trilbymedia/cap-php                 0.1.1                  php-composer                  
 twig/twig                           v1.44.8                php-composer                  
-tzdata                              2026a-r0               apk                           
+tzdata                              2026b-r0               apk                           
 utmps-libs                          0.1.2.2-r1             apk                           
 willdurand/negotiation              3.1.0                  php-composer                  
 xz-libs                             5.8.3-r0               apk                           
