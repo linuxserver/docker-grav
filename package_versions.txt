@@ -20,8 +20,8 @@ c-ares                              1.33.1-r0              apk
 ca-certificates                     20260413-r0            apk                           
 ca-certificates-bundle              20260413-r0            apk                           
 catatonit                           0.2.0-r0               apk                           
+composer                            2.10.0                 binary                        
 composer                            2.7.2                  binary                        
-composer                            2.9.8                  binary                        
 composer/ca-bundle                  1.5.11                 php-composer                  
 composer/semver                     1.7.2                  php-composer                  
 coreutils                           9.5-r2                 apk                           
