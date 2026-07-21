@@ -113,8 +113,8 @@ ncurses-terminfo-base               6.6_p20260516-r0     apk
 netcat-openbsd                      1.234.1-r0           apk                           
 nextgen-editor                      0.1.0                npm                           
 nghttp2-libs                        1.69.0-r0            apk                           
-nginx                               1.30.3-r0            apk                           
-nginx-mod-http-brotli               1.30.3-r0            apk                           
+nginx                               1.30.4-r0            apk                           
+nginx-mod-http-brotli               1.30.4-r0            apk                           
 nikic/fast-route                    v1.3.0               php-composer                  
 nikic/php-parser                    v5.7.0               php-composer                  
 nyholm/psr7                         1.8.2                php-composer                  
