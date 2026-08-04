@@ -1,4 +1,4 @@
-## Version 2026/06/27 - Changelog: https://github.com/linuxserver/docker-grav/commits/main/root/defaults/nginx/site-confs/default.conf.sample
+## Version 2026/07/31 - Changelog: https://github.com/linuxserver/docker-grav/commits/main/root/defaults/nginx/site-confs/default.conf.sample
 
 server {
     listen 80 default_server;
