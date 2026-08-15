@@ -37,7 +37,7 @@ RUN \
   } > /etc/php85/conf.d/php-opcache.ini && \
   if [ -z ${GRAV_RELEASE+x} ]; then \
     GRAV_RELEASE=$(curl -sX GET "https://api.github.com/repos/getgrav/grav/releases/latest" \
-    | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+    | jq -r '.tag_name'); \
   fi && \
   echo "*** Installing Grav ***" && \
   mkdir -p \
