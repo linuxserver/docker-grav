@@ -22,7 +22,7 @@ c-ares                              1.34.8-r0            apk
 ca-certificates                     20260611-r0          apk                           
 ca-certificates-bundle              20260611-r0          apk                           
 catatonit                           0.2.1-r0             apk                           
-composer                            2.10.2               binary                        
+composer                            2.10.3               binary                        
 composer                            2.8.12               binary                        
 composer/ca-bundle                  1.5.13               php-composer                  
 composer/semver                     3.4.4                php-composer                  
@@ -64,7 +64,7 @@ libattr                             2.5.2-r2             apk
 libavif                             1.4.1-r0             apk                           
 libbsd                              0.12.2-r0            apk                           
 libbz2                              1.0.8-r6             apk                           
-libcrypto3                          3.5.7-r0             apk                           
+libcrypto3                          3.5.8-r0             apk                           
 libcurl                             8.21.0-r0            apk                           
 libdav1d                            1.5.3-r0             apk                           
 libedit                             20260508.3.1-r1      apk                           
@@ -83,7 +83,7 @@ libpsl                              0.21.5-r3            apk
 libsasl                             2.1.28-r9            apk                           
 libsharpyuv                         1.6.0-r0             apk                           
 libsm                               1.2.6-r0             apk                           
-libssl3                             3.5.7-r0             apk                           
+libssl3                             3.5.8-r0             apk                           
 libstdc++                           15.2.0-r5            apk                           
 libunistring                        1.4.2-r0             apk                           
 libuuid                             2.42.1-r0            apk                           
@@ -120,7 +120,7 @@ nikic/php-parser                    v5.7.0               php-composer
 nyholm/psr7                         1.8.2                php-composer                  
 nyholm/psr7-server                  1.1.0                php-composer                  
 oniguruma                           6.9.10-r0            apk                           
-openssl                             3.5.7-r0             apk                           
+openssl                             3.5.8-r0             apk                           
 pcre2                               10.47-r1             apk                           
 phar-io/manifest                    2.0.4                php-composer                  
 phar-io/version                     3.2.1                php-composer                  
