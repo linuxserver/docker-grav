@@ -68,7 +68,7 @@ libcrypto3                          3.5.8-r0             apk
 libcurl                             8.21.0-r0            apk                           
 libdav1d                            1.5.3-r0             apk                           
 libedit                             20260508.3.1-r1      apk                           
-libexpat                            2.8.3-r0             apk                           
+libexpat                            2.8.4-r0             apk                           
 libgcc                              15.2.0-r5            apk                           
 libice                              1.1.2-r0             apk                           
 libidn2                             2.3.8-r0             apk                           
@@ -121,7 +121,7 @@ nyholm/psr7                         1.8.2                php-composer
 nyholm/psr7-server                  1.1.0                php-composer                  
 oniguruma                           6.9.10-r0            apk                           
 openssl                             3.5.8-r0             apk                           
-pcre2                               10.47-r1             apk                           
+pcre2                               10.48-r0             apk                           
 phar-io/manifest                    2.0.4                php-composer                  
 phar-io/version                     3.2.1                php-composer                  
 php-debugbar/php-debugbar           v2.2.6               php-composer                  
