@@ -123,6 +123,7 @@ nyholm/psr7-server                  1.1.0                php-composer
 oniguruma                           6.9.10-r0            apk                           
 openssl                             3.5.8-r0             apk                           
 pcre2                               10.48-r0             apk                           
+pear/net_url2                       v2.2.3               php-composer                  
 phar-io/manifest                    2.0.4                php-composer                  
 phar-io/version                     3.2.1                php-composer                  
 php-debugbar/php-debugbar           v2.2.6               php-composer                  
@@ -239,10 +240,10 @@ tedivm/jshrink                      v1.8.1               php-composer
 theseer/tokenizer                   1.3.1                php-composer                  
 thunderer/shortcode                 dev-add-tars-parser  php-composer                  
 trilbymedia/cap-php                 1.0.0                php-composer  (+1 duplicate)  
-tubalmartin/cssmin                  v4.1.1               php-composer                  
 twig/twig                           3.x-dev              php-composer                  
 tzdata                              2026c-r0             apk                           
 utmps-libs                          0.1.3.3-r0           apk                           
+wikimedia/minify                    2.12.0               php-composer                  
 willdurand/negotiation              3.1.0                php-composer                  
 xz-libs                             5.8.4-r0             apk                           
 yaml                                0.2.5-r2             apk                           
