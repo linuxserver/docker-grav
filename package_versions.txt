@@ -166,7 +166,7 @@ psr/log                             3.0.2                php-composer
 psr/simple-cache                    3.0.0                php-composer                  
 ralouphie/getallheaders             3.0.3                php-composer                  
 readline                            8.3.3-r1             apk                           
-rhukster/dom-sanitizer              1.0.17               php-composer                  
+rhukster/dom-sanitizer              1.0.18               php-composer                  
 robthree/twofactorauth              1.8.2                php-composer                  
 rockettheme/toolbox                 2.0.0                php-composer                  
 scanelf                             1.3.9-r1             apk                           
