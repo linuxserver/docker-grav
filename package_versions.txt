@@ -75,10 +75,10 @@ libice                              1.1.2-r0             apk
 libidn2                             2.3.8-r0             apk                           
 libintl                             1.0-r0               apk                           
 libjpeg-turbo                       3.1.3-r0             apk                           
-libldap                             2.6.14-r0            apk                           
+libldap                             2.6.15-r0            apk                           
 libmd                               1.2.0-r0             apk                           
 libncursesw                         6.6_p20260516-r0     apk                           
-libpng                              1.6.58-r1            apk                           
+libpng                              1.6.59-r0            apk                           
 libproc2                            4.0.6-r0             apk                           
 libpsl                              0.21.5-r3            apk                           
 libsasl                             2.1.28-r9            apk                           
@@ -166,9 +166,9 @@ psr/log                             3.0.2                php-composer
 psr/simple-cache                    3.0.0                php-composer                  
 ralouphie/getallheaders             3.0.3                php-composer                  
 readline                            8.3.3-r1             apk                           
-rhukster/dom-sanitizer              1.0.18               php-composer                  
+rhukster/dom-sanitizer              1.0.19               php-composer                  
 robthree/twofactorauth              1.8.2                php-composer                  
-rockettheme/toolbox                 2.0.0                php-composer                  
+rockettheme/toolbox                 2.0.1                php-composer                  
 scanelf                             1.3.9-r1             apk                           
 seld/cli-prompt                     1.0.4                php-composer                  
 shadow                              4.18.0-r1            apk                           
