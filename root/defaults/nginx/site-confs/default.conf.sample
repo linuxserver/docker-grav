@@ -1,4 +1,4 @@
-## Version 2026/07/31 - Changelog: https://github.com/linuxserver/docker-grav/commits/main/root/defaults/nginx/site-confs/default.conf.sample
+## Version 2026/10/26 - Changelog: https://github.com/linuxserver/docker-grav/commits/main/root/defaults/nginx/site-confs/default.conf.sample
 
 server {
     listen 80 default_server;
@@ -56,6 +56,11 @@ server {
     # deny access to .env environment files (expression purposefully not anchored)
     location ~ /\.env(\.|$) { return 403; }
     ## End - Security
+
+    ## Grav API: let PHP handle everything, including lazily generated thumbnails
+    location ^~ /api/ {
+        try_files $uri /index.php$is_args$args;
+    }
 
     ## https://learn.getgrav.org/17/webservers-hosting/servers/nginx#nginx-cache-headers-for-assets
     ## Begin - Caching
