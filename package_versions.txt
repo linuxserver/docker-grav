@@ -57,6 +57,7 @@ icu-data-en                         78.1-r0              apk
 icu-libs                            78.1-r0              apk                           
 itsgoingd/clockwork                 v5.3.5               php-composer                  
 jq                                  1.8.2-r0             apk                           
+lbuchs/webauthn                     v2.2.0               php-composer                  
 league/climate                      3.12.0               php-composer                  
 league/html-to-markdown             5.1.2                php-composer                  
 libapk                              3.0.8-r0             apk                           
