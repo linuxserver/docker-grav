@@ -22,7 +22,7 @@ c-ares                              1.34.9-r0            apk
 ca-certificates                     20261020-r0          apk                           
 ca-certificates-bundle              20261020-r0          apk                           
 catatonit                           0.2.1-r0             apk                           
-composer                            2.11.0               binary                        
+composer                            2.11.1               binary                        
 composer                            2.8.12               binary                        
 composer/ca-bundle                  1.5.14               php-composer                  
 composer/semver                     3.4.4                php-composer                  
@@ -30,7 +30,7 @@ coreutils                           9.11-r0              apk
 coreutils-env                       9.11-r0              apk                           
 coreutils-fmt                       9.11-r0              apk                           
 coreutils-sha512sum                 9.11-r0              apk                           
-curl                                8.22.0-r0            apk                           
+curl                                8.23.0-r0            apk                           
 dasprid/enum                        1.0.7                php-composer                  
 doctrine/collections                2.6.0                php-composer                  
 doctrine/deprecations               1.1.6                php-composer  (+1 duplicate)  
@@ -66,10 +66,10 @@ libavif                             1.4.1-r0             apk
 libbsd                              0.12.2-r0            apk                           
 libbz2                              1.0.8-r6             apk                           
 libcrypto3                          3.5.9-r0             apk                           
-libcurl                             8.22.0-r0            apk                           
+libcurl                             8.23.0-r0            apk                           
 libdav1d                            1.5.3-r0             apk                           
 libedit                             20260508.3.1-r1      apk                           
-libexpat                            2.9.0-r0             apk                           
+libexpat                            2.10.0-r0            apk                           
 libgcc                              15.2.0-r5            apk                           
 libice                              1.1.2-r0             apk                           
 libidn2                             2.3.8-r0             apk                           
