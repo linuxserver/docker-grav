@@ -212,7 +212,7 @@ symfony/var-exporter                v7.4.18              php-composer
 symfony/yaml                        v7.4.18              php-composer                  
 tedivm/jshrink                      v1.8.1               php-composer                  
 thunderer/shortcode                 dev-add-tars-parser  php-composer                  
-trilbymedia/cap-php                 1.0.0                php-composer  (+1 duplicate)  
+trilbymedia/cap-php                 1.2.0                php-composer  (+1 duplicate)  
 twig/twig                           3.x-dev              php-composer                  
 tzdata                              2026e-r0             apk                           
 utmps-libs                          0.1.3.3-r0           apk                           
