@@ -128,6 +128,7 @@ php85-common                        8.5.12-r0            apk
 php85-ctype                         8.5.12-r0            apk                           
 php85-curl                          8.5.12-r0            apk                           
 php85-dom                           8.5.12-r0            apk                           
+php85-exif                          8.5.12-r0            apk                           
 php85-fileinfo                      8.5.12-r0            apk                           
 php85-fpm                           8.5.12-r0            apk                           
 php85-gd                            8.5.12-r0            apk                           
