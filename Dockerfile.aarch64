@@ -14,6 +14,7 @@ RUN \
     busybox-suid \
     nginx-mod-http-brotli \
     php85-dom \
+    php85-exif \
     php85-gd \
     php85-intl \
     php85-ldap \
